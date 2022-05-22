@@ -15,10 +15,11 @@ return new class extends Migration
     {
         Schema::create('workers', function (Blueprint $table) {
             $table->id();
+            $table->worker_id();   //A
             $table->string('first_name',50);
             $table->string('last_name',50);
             $table->string('department',50);
-            $table->bigInteger('room');
+            $table->bigInteger('room_id');
             $table->timestamps();
             $table->softDeletes();
         });
