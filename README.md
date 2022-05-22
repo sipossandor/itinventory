@@ -1,7 +1,6 @@
  ![kép](https://user-images.githubusercontent.com/72022707/169694436-152f9e06-11f5-47b7-9b5f-596e6162981e.png)
 
-
-![EntityRelationshipDiagram1](https://user-images.githubusercontent.com/72022707/169694650-32499fc8-9359-402c-b382-6b47304a18f5.jpg)
+![EntityRelationshipDiagram1](https://user-images.githubusercontent.com/72022707/169695526-efdb2c0b-6d8c-4c68-a07a-c10cfa384155.jpg)
 
 A program nyilvántartja a cég informatikai eszközeit.
 Az IT Admin be tud jelentkezni, ki tud jelentkezni, új dolgozókat, hardwaret tud felvenni, módosítani tudja a hardware elemek hozzá rendelését a dolgozókhoz, lekérdezéseket tud futtatni, törölni tud felhasználókat, hardware elemeket és az IT Usereket tudja adminisztrálni.
