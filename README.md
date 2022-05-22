@@ -11,6 +11,7 @@ A hardwares tábla tartalmazza a konkrét hardware azonosítóját, gyári szám
 A categories tábla tartalmazza a hardware pontos paramétereit.
 A rooms tábla tartalmazza a dolgozó szobájának számát és az épületet.
 Az it_admins_users tartalmazza az adminok és userek  felhasználó nevét és a teljes nevét.
+
 GitHub link: https://github.com/sipossandor/itinventory
 
 
