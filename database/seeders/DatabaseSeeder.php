@@ -59,7 +59,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('workers')->insert([
             'id'=> 1,
-            'worker_id'=> 1,
             'first_name' => "Anna",
             'last_name' => "Aranyos",
             'department' => 'KSZ',
@@ -70,7 +69,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('workers')->insert([
             'id'=> 2,
-            'worker_id'=> 2,
             'first_name' => "Béla",
             'last_name' => "Benedek",
             'department' => 'MUP',
@@ -81,7 +79,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('workers')->insert([
             'id'=> 3,
-            'worker_id'=> 3,
             'first_name' => "Cecilia",
             'last_name' => "Cirmos",
             'department' => 'UZE',
@@ -92,7 +89,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('workers')->insert([
             'id'=> 4,
-            'worker_id'=> 4,
             'first_name' => "Diana",
             'last_name' => "Demeter",
             'department' => 'REM',
@@ -103,7 +99,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('workers')->insert([
             'id'=> 5,
-            'worker_id'=> 5,
             'first_name' => "Emese",
             'last_name' => "Erbert",
             'department' => 'KSZ',
@@ -164,7 +159,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('rooms')->insert([
             'id'=> 1,
-            'room_id'=> 1,
             'building'=> "SZM",
             'room_name' => "A001",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -173,7 +167,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('rooms')->insert([
             'id'=> 2,
-            'room_id'=> 2,
             'building'=> "MNG",
             'room_name' => "B001",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -182,7 +175,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('rooms')->insert([
             'id'=> 3,
-            'room_id'=> 3,
             'building'=> "Vasarely",
             'room_name' => "C001",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -191,7 +183,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('rooms')->insert([
             'id'=> 4,
-            'room_id'=> 4,
             'building'=> "Zichy",
             'room_name' => "D001",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -200,7 +191,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('rooms')->insert([
             'id'=> 5,
-            'room_id'=> 5,
             'building'=> "Benczúr",
             'room_name' => "E001",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -209,7 +199,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('categories')->insert([
             'id'=> 1,
-            'categoriy_id'=> 1,
             'hardware_name' => "PC",
             'buying_date' => 2022-01-01,
             'motherboard_type' => 'Asus',
@@ -224,7 +213,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('categories')->insert([
             'id'=> 2,
-            'categoriy_id'=> 2,
             'hardware_name' => "Monitor",
             'buying_date' => 2021-01-01,
             'motherboard_type' => 'AOC',
@@ -239,7 +227,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('categories')->insert([
             'id'=> 3,
-            'categoriy_id'=> 3,
             'hardware_name' => "Notebook",
             'buying_date' => 2020-01-01,
             'motherboard_type' => 'Toshiba',
@@ -254,7 +241,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('categories')->insert([
             'id'=> 4,
-            'categoriy_id'=> 4,
             'hardware_name' => "Printer",
             'buying_date' => 2019-01-01,
             'motherboard_type' => 'Canon',
@@ -269,7 +255,6 @@ class DatabaseSeeder extends Seeder
 
         DB::table('categories')->insert([
             'id'=> 5,
-            'categoriy_id'=> 5,
             'hardware_name' => "Scanner",
             'buying_date' => 2018-01-01,
             'motherboard_type' => 'HP',

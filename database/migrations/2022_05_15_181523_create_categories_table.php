@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->category_id();
             $table->string('hardware_name',50);
             $table->timestamp('buying_date',);
             $table->string('motherboard_type',50);
