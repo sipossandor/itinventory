@@ -200,7 +200,7 @@ class DatabaseSeeder extends Seeder
         DB::table('categories')->insert([
             'id'=> 1,
             'hardware_name' => "PC",
-            'buying_date' => 2022-01-01,
+            'buying_date' => '2019-01-01 10:01:01',
             'motherboard_type' => 'Asus',
             'cpu_type' => 'Intel E8400 ',
             'ssd_type' => 'Crucial 128GB',
@@ -214,7 +214,7 @@ class DatabaseSeeder extends Seeder
         DB::table('categories')->insert([
             'id'=> 2,
             'hardware_name' => "Monitor",
-            'buying_date' => 2021-01-01,
+            'buying_date' => '2020-01-01 10:01:01',
             'motherboard_type' => 'AOC',
             'cpu_type' => ' ',
             'ssd_type' => ' ',
@@ -228,7 +228,7 @@ class DatabaseSeeder extends Seeder
         DB::table('categories')->insert([
             'id'=> 3,
             'hardware_name' => "Notebook",
-            'buying_date' => 2020-01-01,
+            'buying_date' => '2021-01-01 10:01:01',
             'motherboard_type' => 'Toshiba',
             'cpu_type' => 'Intel I7-4500 ',
             'ssd_type' => 'Kingston 256GB ',
@@ -242,7 +242,7 @@ class DatabaseSeeder extends Seeder
         DB::table('categories')->insert([
             'id'=> 4,
             'hardware_name' => "Printer",
-            'buying_date' => 2019-01-01,
+            'buying_date' => '2022-01-01 10:01:01',
             'motherboard_type' => 'Canon',
             'cpu_type' => ' ',
             'ssd_type' => ' ',
@@ -256,7 +256,7 @@ class DatabaseSeeder extends Seeder
         DB::table('categories')->insert([
             'id'=> 5,
             'hardware_name' => "Scanner",
-            'buying_date' => 2018-01-01,
+            'buying_date' => '2017-01-01 10:01:01',
             'motherboard_type' => 'HP',
             'cpu_type' => ' ',
             'ssd_type' => ' ',
@@ -308,7 +308,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('it_admins_users')->insert([
-            'id'=> 4,
+            'id'=> 5,
             'user_name' => "U2",
             'first_name' => "Elek",
             'last_name' => "Erdész",
