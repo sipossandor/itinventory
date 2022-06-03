@@ -30,12 +30,12 @@ Route::get('/data_modify', [DataModifyController::class, 'index'])
 Route::get('/user_administration', [UserAdministrationController::class, 'index'])
     ->name('UserAdministration')->middleware('auth');
 
-
+/*
 Route::get('/home', [PrivateController::class, 'home'])
     ->name('private.home')->middleware('auth');
 Route::post('/store', [PrivateController::class, 'store'])
     ->name('private.ticket.store')->middleware('auth');;
-
+*/
 Route::get('/admin/categories', [CategoryController::class ,'index'])
     ->name('admin.categories')->middleware('auth');
 Route::post('/admin/categories/store', [CategoryController::class ,'store'])
