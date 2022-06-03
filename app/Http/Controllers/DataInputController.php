@@ -14,8 +14,8 @@ class DataInputController extends Controller
      */
     public function index()
     {
-
-        return "DataInputController";
+        return view ('datainput');
+        //return "DataInputController";
     }
 
     /**

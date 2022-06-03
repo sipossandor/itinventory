@@ -13,10 +13,11 @@ class DataQueryController extends Controller
      */
     public function index()
     {
+        return view ('dataquery');
         //return "DataQueryController";
-        $users = DB::table('users')->get();
+        //$users = DB::table('users')->get();
 
-        return view('user.id', ['users' => $users]);
+        //return view('user.id', ['users' => $users]);
         /**
         return view('index', [
             //'images' => Storage::disk('public')->files('img')

@@ -13,7 +13,8 @@ class DataModifyController extends Controller
      */
     public function index()
     {
-        return "DataModifyController";
+        return view ('datamodify');
+        //return "DataModifyController";
     }
 
     /**

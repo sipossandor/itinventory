@@ -13,7 +13,8 @@ class UserAdministrationController extends Controller
      */
     public function index()
     {
-        return "UserAdministrationController";
+        return view ('useradministration');
+        //return "UserAdministrationController";
     }
 
     /**
