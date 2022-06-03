@@ -15,6 +15,18 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('DataInput')" :active="request()->routeIs('DataInput')">
+                        {{ __('Data Input') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('DataQuery')" :active="request()->routeIs('DataQuery')">
+                        {{ __('Data Query') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('DataModify')" :active="request()->routeIs('DataModify')">
+                        {{ __('Data Modify') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('UserAdministration')" :active="request()->routeIs('UserAdministration')">
+                        {{ __('User Administration') }}
+                    </x-nav-link>
                 </div>
             </div>
 
