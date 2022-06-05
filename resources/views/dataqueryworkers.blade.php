@@ -24,16 +24,30 @@
                         </x-nav-link>
 
                     </div>
+                    <table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>Dolgozó</th>
-                        <th>Szerző</th>
-                        <th>Kiadás éve</th>
-                        <th>Nyelv</th>
-                        <th>ISBN</th>
+                        <th>Keresztnév</th>
+                        <th>Vezetéknév</th>
+                        <th>Osztály</th>
+                        <th>Szoba szám</th>
                         <th></th>
                     </tr>
                     </thead>
+                    <tbody>
+                    @forelse($workers as $worker)
+                        <tr>
+                            <td>{{ $worker->first_name }}</td>
+                            <td>{{ $worker->last_name }}</td>
+                            <td>{{ $worker->department }}</td>
+                            <td>{{ $worker->room_id }}</td>
+                        </tr>
+                    </tbody>
+                    @empty
+                    @endforelse
+                    </table>
+
+
                 </div>
             </div>
         </div>

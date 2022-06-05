@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Worker;
+use App\Models\Room;
 use Illuminate\Http\Request;
 
 class DataqueryworkersController extends Controller
@@ -13,7 +15,11 @@ class DataqueryworkersController extends Controller
      */
     public function index()
     {
-        return view ('dataqueryworkers');
+        $workers=Worker::all();
+
+        return view ('dataqueryworkers', [
+            'workers'=>$workers,
+        ]);
     }
 
     /**

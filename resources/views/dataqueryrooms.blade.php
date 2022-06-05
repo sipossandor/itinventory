@@ -24,19 +24,32 @@
                         </x-nav-link>
 
                     </div>
+                    <table class="table table-striped">
                     <thead>
                     <tr>
+                        <th>Épület</th>
                         <th>Szoba</th>
-                        <th>Szerző</th>
-                        <th>Kiadás éve</th>
-                        <th>Nyelv</th>
-                        <th>ISBN</th>
                         <th></th>
                     </tr>
                     </thead>
+                    <tbody>
+                    @forelse($rooms as $room)
+                        <tr>
+                            <td>{{ $room->building }}</td>
+                            <td>{{ $room->room_name }}</td>
+                        </tr>
+                    </tbody>
+                        @empty
+                        @endforelse
+
+                    </table>
+
+
                 </div>
             </div>
         </div>
     </div>
 </x-app-layout>
+
+
 

@@ -24,6 +24,7 @@
                         </x-nav-link>
 
                     </div>
+                    <!--
                     <thead>
                     <tr>
                         <th>Cím</th>
@@ -34,6 +35,7 @@
                         <th></th>
                     </tr>
                     </thead>
+                    -->
                 </div>
             </div>
         </div>

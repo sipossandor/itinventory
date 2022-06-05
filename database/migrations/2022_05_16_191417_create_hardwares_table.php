@@ -15,10 +15,13 @@ return new class extends Migration
     {
         Schema::create('hardwares', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('worker_id');
-            $table->bigInteger('category_id');
+            $table->unsignedBigInteger("worker_id");
+            $table->unsignedBigInteger("category_id");
+            $table->foreign('worker_id')->references('id')->on('workers')->onDelete('cascade');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->string('serial_number','50');
             $table->string('inventory_number','50');
+
             $table->timestamps();
             $table->softDeletes();
         });

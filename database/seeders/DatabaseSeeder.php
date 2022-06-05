@@ -107,55 +107,6 @@ class DatabaseSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
 
-        DB::table('hardwares')->insert([
-            'id'=> 1,
-            'worker_id'=> 1,
-            'category_id'=> 1,
-            'serial_number' => "CN001",
-            'inventory_number' => "L001",
-            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
-        ]);
-
-        DB::table('hardwares')->insert([
-            'id'=> 2,
-            'worker_id'=> 2,
-            'category_id'=> 2,
-            'serial_number' => "CN002",
-            'inventory_number' => "L002",
-            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
-        ]);
-
-        DB::table('hardwares')->insert([
-            'id'=> 3,
-            'worker_id'=> 3,
-            'category_id'=> 3,
-            'serial_number' => "CN003",
-            'inventory_number' => "L003",
-            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
-        ]);
-
-        DB::table('hardwares')->insert([
-            'id'=> 4,
-            'worker_id'=> 4,
-            'category_id'=> 4,
-            'serial_number' => "CN004",
-            'inventory_number' => "L004",
-            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
-        ]);
-
-        DB::table('hardwares')->insert([
-            'id'=> 5,
-            'worker_id'=> 5,
-            'category_id'=> 5,
-            'serial_number' => "CN005",
-            'inventory_number' => "L005",
-            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
-        ]);
 
         DB::table('rooms')->insert([
             'id'=> 1,
@@ -266,56 +217,58 @@ class DatabaseSeeder extends Seeder
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
-
-        DB::table('it_admins_users')->insert([
+        DB::table('hardwares')->insert([
             'id'=> 1,
-            'user_name' => "A1",
-            'first_name' => "Antal",
-            'last_name' => "Almási",
-            'itadmin'=> true,
+            'worker_id'=> 1,
+            'category_id'=> 1,
+            'serial_number' => "CN001",
+            'inventory_number' => "L001",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
 
-        DB::table('it_admins_users')->insert([
+        DB::table('hardwares')->insert([
             'id'=> 2,
-            'user_name' => "A2",
-            'first_name' => "Béla",
-            'last_name' => "Benedek",
-            'itadmin'=> true,
+            'worker_id'=> 2,
+            'category_id'=> 2,
+            'serial_number' => "CN002",
+            'inventory_number' => "L002",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
 
-        DB::table('it_admins_users')->insert([
+        DB::table('hardwares')->insert([
             'id'=> 3,
-            'user_name' => "A3",
-            'first_name' => "Cecil",
-            'last_name' => "Ceglédi",
-            'itadmin'=> true,
+            'worker_id'=> 3,
+            'category_id'=> 3,
+            'serial_number' => "CN003",
+            'inventory_number' => "L003",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
 
-        DB::table('it_admins_users')->insert([
+        DB::table('hardwares')->insert([
             'id'=> 4,
-            'user_name' => "U1",
-            'first_name' => "Dénes",
-            'last_name' => "Demeter",
-            'itadmin'=> false,
+            'worker_id'=> 4,
+            'category_id'=> 4,
+            'serial_number' => "CN004",
+            'inventory_number' => "L004",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
 
-        DB::table('it_admins_users')->insert([
+        DB::table('hardwares')->insert([
             'id'=> 5,
-            'user_name' => "U2",
-            'first_name' => "Elek",
-            'last_name' => "Erdész",
-            'itadmin'=> false,
+            'worker_id'=> 5,
+            'category_id'=> 5,
+            'serial_number' => "CN005",
+            'inventory_number' => "L005",
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
+
+
+
 
 
 

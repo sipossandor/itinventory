@@ -35,24 +35,22 @@
                             <th></th>
                         </tr>
                         </thead>
-                        <?php if (isset($data) && count($data)>0): ?>
+
                         <tbody>
-                        <?php foreach ($data as $hardware): ?>
+
                         <tr>
-                            <td><?= $hardware["id"]?></td>
-                            <td><?= $hardware["worker_id"]?></td>
-                            <td><?= $hardware["category_id"]?></td>
-                            <td><?= $hardware["serial_number"]?></td>
-                            <td><?= $hardware["inventory_number"]?></td>
+
+
                             <td>
-                                <a href="/details?id=<?= $hardware["id"] ?>">Részletek</a>
+
+
+
                             </td>
+
                         </tr>
-                        <?php endforeach; ?>
+
                         </tbody>
-                        <?php else: ?>
-                        <caption>Nincsenek könyvek a rendszerben!</caption>
-                        <?php endif; ?>
+
                     </table>
 
                 </div>
