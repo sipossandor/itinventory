@@ -3,6 +3,9 @@
 use App\Http\Controllers\DataInputController;
 use App\Http\Controllers\DataModifyController;
 use App\Http\Controllers\DataQueryController;
+use App\Http\Controllers\DataqueryhardwaresController;
+use App\Http\Controllers\DataqueryroomsController;
+use App\Http\Controllers\DataqueryworkersController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\PrivateController;
 use App\Http\Controllers\CategoryController;
@@ -25,6 +28,12 @@ Route::get('/data_input', [DataInputController::class, 'index'])
     ->name('DataInput')->middleware('auth');
 Route::get('/data_query', [DataQueryController::class, 'index'])
     ->name('DataQuery')->middleware('auth');
+Route::get('/data_query_rooms', [DataqueryroomsController::class, 'index'])
+    ->name('DataQueryRooms')->middleware('auth');
+Route::get('/data_query_hardwares', [DataqueryhardwaresController::class, 'index'])
+    ->name('DataQueryHardwares')->middleware('auth');
+Route::get('/data_query_workers', [DataqueryworkersController::class, 'index'])
+    ->name('DataQueryWorkers')->middleware('auth');
 Route::get('/data_modify', [DataModifyController::class, 'index'])
     ->name('DataModify')->middleware('auth');
 Route::get('/user_administration', [UserAdministrationController::class, 'index'])

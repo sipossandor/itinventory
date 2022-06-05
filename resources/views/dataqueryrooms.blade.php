@@ -1,0 +1,2 @@
+
+return 'DataQueryRooms Blade PHP';

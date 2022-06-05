@@ -1,0 +1,2 @@
+
+return 'DataQueryHardwares Blade PHP';

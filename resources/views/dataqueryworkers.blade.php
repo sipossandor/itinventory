@@ -1,0 +1,3 @@
+
+return 'DataQueryWorkers Blade PHP';
+

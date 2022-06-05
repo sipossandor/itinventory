@@ -13,13 +13,13 @@
                     <br>
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
 
-                        <x-nav-link :href="route('DataInput')" :active="request()->routeIs('DataInput')">
+                        <x-nav-link :href="route('DataQueryHardwares')" :active="request()->routeIs('DataQueryHardwares')">
                             {{ __('Hardwares') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('DataQuery')" :active="request()->routeIs('DataQuery')">
+                        <x-nav-link :href="route('DataQueryRooms')" :active="request()->routeIs('DataQueryRooms')">
                             {{ __('Rooms') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('DataModify')" :active="request()->routeIs('DataModify')">
+                        <x-nav-link :href="route('DataQueryWorkers')" :active="request()->routeIs('DataQueryWorkers')">
                             {{ __('Workers') }}
                         </x-nav-link>
 
