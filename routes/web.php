@@ -10,6 +10,7 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\PrivateController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UserAdministrationController;
+use App\Http\Controllers\VueController;
 use App\Http\Controllers\VuedataqueryhardwarersController;
 use App\Http\Controllers\VuedataqueryhardwaresController;
 use App\Http\Controllers\VuedataqueryroomsController;
@@ -49,6 +50,9 @@ Route::get('/vuedataqueryhardwares', [VuedataqueryhardwaresController::class, 'i
     ->name('Vuedataqueryhardwares')->middleware('auth');
 Route::get('/vue_data_query_workers', [VuedataqueryworkersController::class, 'index'])
     ->name('Vuedataqueryworkers')->middleware('auth');
+
+Route::get('/vue', function () {
+    return view('vue');});
 
 Route::get('/data_modify', [DataModifyController::class, 'index'])
     ->name('DataModify')->middleware('auth');
