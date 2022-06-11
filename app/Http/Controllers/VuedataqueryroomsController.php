@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Worker;
-use App\Models\Room;
 use Illuminate\Http\Request;
 
-class DataqueryroomsController extends Controller
+class VuedataqueryroomsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,13 +13,8 @@ class DataqueryroomsController extends Controller
      */
     public function index()
     {
-       $rooms = Room::all();
-
-        return view('dataqueryrooms', [
-           //'rooms' => $rooms,
-            'rooms' => Room::all(),
-        ]);
-
+        return view ('vuedataqueryrooms');
+        //
     }
 
     /**
@@ -37,34 +30,29 @@ class DataqueryroomsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param int $id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
         //
-        $room = Room::find($id);
-        $room["devices"] = $room->devices;
-
-        return $room;
-
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param int $id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -75,8 +63,8 @@ class DataqueryroomsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param int $id
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -87,7 +75,7 @@ class DataqueryroomsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param int $id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
@@ -95,4 +83,3 @@ class DataqueryroomsController extends Controller
         //
     }
 }
-

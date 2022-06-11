@@ -1,4 +1,5 @@
 <template>
+    ROOOOM
     <div :style="style">
         {{ device.name }}
     </div>

@@ -10,6 +10,13 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\PrivateController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UserAdministrationController;
+use App\Http\Controllers\VuedataqueryhardwarersController;
+use App\Http\Controllers\VuedataqueryhardwaresController;
+use App\Http\Controllers\VuedataqueryroomsController;
+use App\Http\Controllers\VuedataqueryworkersController;
+use App\Http\Controllers\VuehardwaresController;
+use App\Http\Controllers\VueroomsController;
+use App\Http\Controllers\VueworkersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,12 +35,21 @@ Route::get('/data_input', [DataInputController::class, 'index'])
     ->name('DataInput')->middleware('auth');
 Route::get('/data_query', [DataQueryController::class, 'index'])
     ->name('DataQuery')->middleware('auth');
+
 Route::get('/data_query_rooms', [DataqueryroomsController::class, 'index'])
     ->name('DataQueryRooms')->middleware('auth');
 Route::get('/data_query_hardwares', [DataqueryhardwaresController::class, 'index'])
     ->name('DataQueryHardwares')->middleware('auth');
 Route::get('/data_query_workers', [DataqueryworkersController::class, 'index'])
     ->name('DataQueryWorkers')->middleware('auth');
+
+Route::get('/vuedataqueryrooms', [VuedataqueryroomsController::class, 'index'])
+    ->name('Vuedataqueryrooms')->middleware('auth');
+Route::get('/vuedataqueryhardwares', [VuedataqueryhardwaresController::class, 'index'])
+    ->name('Vuedataqueryhardwares')->middleware('auth');
+Route::get('/vue_data_query_workers', [VuedataqueryworkersController::class, 'index'])
+    ->name('Vuedataqueryworkers')->middleware('auth');
+
 Route::get('/data_modify', [DataModifyController::class, 'index'])
     ->name('DataModify')->middleware('auth');
 Route::get('/user_administration', [UserAdministrationController::class, 'index'])

@@ -13,16 +13,24 @@
                     <br>
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
 
-                        <x-nav-link :href="route('DataQueryHardwares')" :active="request()->routeIs('DataQueryHardwares')">
+                        <x-nav-link :href="route('DataQueryHardwares')" :active="request() -> routeIs('DataQueryHardwares')">
                             {{ __('Hardwares') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('DataQueryRooms')" :active="request()->routeIs('DataQueryRooms')">
+                        <x-nav-link :href="route('DataQueryRooms')" :active="request() -> routeIs('DataQueryRooms')">
                             {{ __('Rooms') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('DataQueryWorkers')" :active="request()->routeIs('DataQueryWorkers')">
+                        <x-nav-link :href="route('DataQueryWorkers')" :active="request() -> routeIs('DataQueryWorkers')">
                             {{ __('Workers') }}
                         </x-nav-link>
-
+                        <x-nav-link :href="route('Vuedataqueryhardwares')" :active="request() -> routeIs('Vuedataqueryhardwares')">
+                            {{ __('Vue_Hardwares') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('Vuedataqueryrooms')" :active="request() -> routeIs('Vuedataqueryrooms')">
+                            {{ __('Vue_Rooms') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('Vuedataqueryworkers')" :active="request() -> routeIs('Vuedataqueryworkers')">
+                            {{ __('Vue_Workers') }}
+                        </x-nav-link>
                     </div>
                     <!--
                     <thead>
