@@ -1,5 +1,5 @@
 <template>
-
+Hardware - Hardware
 </template>
 
 <script>

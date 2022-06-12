@@ -18,3 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('/room/{id}', [\App\Http\Controllers\DataqueryroomsController::class, 'show']);
+Route::get('/vue', [VueController::class, 'index'])
+    ->name('Vue')->middleware('auth');

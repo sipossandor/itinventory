@@ -5,9 +5,9 @@ import WorkerView from "./components/WorkerView";
 
 export default {
     components: {
-        CategoryView,
+
         HardwareView,
-        WorkerView,
+
 
     }
 }
