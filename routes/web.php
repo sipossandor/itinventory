@@ -50,9 +50,9 @@ Route::get('/vuedataqueryhardwares', [VuedataqueryhardwaresController::class, 'i
     ->name('Vuedataqueryhardwares')->middleware('auth');
 Route::get('/vue_data_query_workers', [VuedataqueryworkersController::class, 'index'])
     ->name('Vuedataqueryworkers')->middleware('auth');
+Route::get('/vue', [VueController::class, 'index'])
+    ->name('Vue')->middleware('auth');
 
-Route::get('/vue', function () {
-    return view('vue');});
 
 Route::get('/data_modify', [DataModifyController::class, 'index'])
     ->name('DataModify')->middleware('auth');
